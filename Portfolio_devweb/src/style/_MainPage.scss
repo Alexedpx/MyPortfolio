@@ -1,20 +1,31 @@
-* {
-    font-family: Montserrat, sans-serif;
-    background-color: rgba(37, 36, 36, 1);
-    color: white;
+body {
+    background-color: var(--background-color);
 }
+.container-presentation {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
 
-.Header_text {
-    display: flex;
+  .Header_text {
+    margin-top: 40px;
+    margin-right: 40px;
+    text-align: center;
+  }
+  h1 {
+    font-size: calc(var(--font-size-standard) * 2);
     flex-direction: column;
-    align-items: flex-end;
-    padding: 40px;
-    
-    border: 1px solid red;
-    p {
-        margin-right: 5%;
-    }
-    
+  }
 
-    
+  .Profil {
+    p {
+      font-size: calc(var(--font-size-standard) * 1);
+    }
+  }
+  .Social_link {
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
 }
