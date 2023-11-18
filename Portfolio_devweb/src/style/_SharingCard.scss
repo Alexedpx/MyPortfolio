@@ -1,15 +1,11 @@
-.myCard {
+.Sharing {
   background-color: transparent;
   width: 300px;
   height: 420px;
 }
 
-.title {
-  font-size: 1.5em;
-  font-weight: 900;
-  text-align: center;
-  margin: 0;
-}
+
+
 
 .innerCard {
   position: relative;
@@ -21,7 +17,7 @@
   cursor: pointer;
 }
 
-.myCard:hover .innerCard {
+.Sharing:hover .innerCard {
   transform: rotateY(180deg);
 }
 
@@ -102,7 +98,8 @@
   }
 }
 
-.frontSide,
+
+.Sharing.frontSide,
 .frontSide::before {
   background: linear-gradient(
     43deg,
