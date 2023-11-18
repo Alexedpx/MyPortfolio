@@ -1,0 +1,53 @@
+.background-animated {
+  background: linear-gradient(
+    315deg,
+    #211a1e 3%,
+    #9368b7 38%,
+    #86a59c 68%,
+    #0b5563 98%
+  );
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  display: flex;
+  justify-content: center;
+ 
+  background-attachment: fixed;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+}
+
+.container-intro {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .Welcome {
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+    h1 {
+      font-size: calc(var(--font-size-standard) * 2);
+    }
+    p {
+      font-size: calc(var(--font-size-standard) * 1.2);
+    }
+    h2 {
+      font-size: calc(var(--font-size-standard) * 1.5);
+    }
+  }
+}

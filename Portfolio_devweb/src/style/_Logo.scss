@@ -1,0 +1,17 @@
+.container-presentation {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3%;
+
+  .logo {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    p {
+      
+      animation: scaleIn 0.5s ease-out;
+    }
+  }
+}
