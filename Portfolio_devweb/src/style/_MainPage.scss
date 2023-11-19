@@ -1,5 +1,44 @@
+
+html {
+  height:100%;
+}
+
 body {
-  background-color: var(--background-color);
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(17, 16, 16)50%, rgb(39, 39, 39) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+
+
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
 @keyframes scaleIn {
   from {
@@ -17,14 +56,13 @@ body {
   justify-content: space-between;
   align-items: center;
 
-
-  
   .Profil {
     animation: scaleIn 0.9s ease-out;
-    padding-right: 9%;
-    cursor: pointer;
+    padding-right: 12%;
+    
 
     p {
+      cursor: pointer;
       position: relative;
       font-size: calc(var(--font-size-standard) * 1);
     }
@@ -44,6 +82,61 @@ body {
     }
     p:hover::after {
       transform: scaleX(1);
+    }
+    .cta {
+      position: relative;
+      margin: auto;
+      padding: 12px 18px;
+      transition: all 0.2s ease;
+      border: none;
+      background: none;
+    }
+
+    .cta:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      border-radius: 50px;
+      background: #6B9080;
+      width: 45px;
+      height: 45px;
+      transition: all 0.3s ease;
+    }
+
+    .cta span {
+      position: relative;
+      font-family: "Montserrat";
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .cta svg {
+      position: relative;
+      top: 0;
+      margin-left: 10px;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all 0.3s ease;
+    }
+
+    .cta:hover:before {
+      width: 100%;
+      background: #6B9080;
+    }
+
+    .cta:hover svg {
+      transform: translateX(0);
+    }
+
+    .cta:active {
+      transform: scale(0.95);
     }
   }
   .Social_link {

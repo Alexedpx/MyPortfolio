@@ -1,11 +1,17 @@
-import Logo from '../components/Logo';
+import Footer from "../components/Footer";
+import Logo from "../components/Logo";
+
 
 export default function ContactCard() {
   return (
     <>
-    <div className="logo">
-         <Logo />
-        </div>
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+      <div class="content"></div>
+      <div className="container-presentation">
+        <Logo />
+      </div>
       <div className="container-contactcard">
         <div className="card-email">
           <h1>Contact</h1>
@@ -39,7 +45,9 @@ export default function ContactCard() {
             <p></p>
           </div>
         </div>
+        
       </div>
+      <Footer />
     </>
   );
 }

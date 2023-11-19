@@ -27,9 +27,9 @@
   }
 
   .header {
-    
+    position: absolute;
     animation: slideAnimation 2s;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transition: transform 0.5s ease;
     h1 {
       
       cursor: pointer;

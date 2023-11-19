@@ -4,7 +4,6 @@
   /* Colors */
   --primary-color: #ffffff;
   --secondary-color: #000000;
-  --background-color: rgba(37, 36, 36, 1);
 
   /* font-family */
   --font: "Montserrat", sans-serif;
@@ -31,8 +30,6 @@
   padding: 0;
   box-sizing: border-box;
   color: var(--primary-color);
- 
- 
 }
 
 body {
@@ -42,7 +39,31 @@ body {
   overflow-y: hidden;
   overflow-x: hidden;
 }
+html {
+  height: 100%;
+}
 
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    -60deg,
+    rgb(17, 16, 16) 50%,
+    rgb(39, 39, 39) 50%
+  );
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
 
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
 
-
+.bg3 {
+  animation-duration: 5s;
+}
