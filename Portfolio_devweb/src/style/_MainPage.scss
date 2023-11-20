@@ -57,6 +57,7 @@ body {
 
 	.Profil {
 		animation: scaleIn 0.9s ease-out;
+    padding-top: 2%;
 		padding-right: 12%;
 
 		p {
@@ -160,6 +161,7 @@ body {
 			margin-left: 10%;
 
 			p {
+        
 				font-size: calc(var(--font-size-standard) * 0.8);
 			}
 		}

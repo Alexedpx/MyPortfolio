@@ -6,6 +6,7 @@
     position: absolute;
     justify-content: center;
     align-content: center;
+    margin-right: 2%;
     width: 230px;
     height: 300px;
     border-radius: 10px;
@@ -119,7 +120,7 @@
 
 @media screen and (max-width: 600px) {
   .container-profilcard {
-  margin-right: 2%;
+  
     .card {
     
       height: 310px;

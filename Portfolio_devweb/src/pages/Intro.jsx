@@ -1,10 +1,14 @@
 import { NavLink } from "react-router-dom";
+import Logo from "../components/Logo";
 
 export default function Intro() {
 	return (
 		<>
+		
 			<div className="background-animated">
+			
 				<div className="container-intro">
+				<Logo />
 					<div className="Welcome">
 						<button>
 							<NavLink to="/home">
