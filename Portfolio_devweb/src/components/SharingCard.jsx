@@ -28,7 +28,11 @@ export default function SharingCard() {
               </p>
             </div>
             <div className="link">
-              <a href="https://dreallers.github.io/sharing_is_caring/">
+              <a
+                href="https://dreallers.github.io/sharing_is_caring/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 View Website
               </a>
             </div>
