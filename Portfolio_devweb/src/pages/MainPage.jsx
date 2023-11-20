@@ -44,12 +44,12 @@ export default function MainPage() {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<img src="src/public/images/social/Github.png" />
+						<img src="/images/social/Github.png" />
 					</a>
 					<NavLink to="/contact">
 						<img
 							onClick={handleContactMeClick}
-							src="src/public/images/social/Mail.png"
+							src="/images/social/Mail.png"
 						/>
 					</NavLink>
 
@@ -58,7 +58,7 @@ export default function MainPage() {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<img src="src/public/images/social/Linkedin.png" />
+						<img src="/images/social/Linkedin.png" />
 					</a>
 				</div>
 			</div>

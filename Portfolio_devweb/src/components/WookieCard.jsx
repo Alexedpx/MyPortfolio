@@ -4,7 +4,7 @@ export default function WookieCard() {
         <div className="Wookie">
           <div className="innerCard">
             <div className="FrontSide">
-              <img src="src/public/images/card/Wookie.png" />
+              <img src="/images/card/Wookie.png" />
             </div>
             <div className="BackSide">
               <p className="title">Ride through the Galaxy</p>

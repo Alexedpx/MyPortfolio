@@ -6,7 +6,7 @@ export default function Logo() {
     <div className="container-logo">
       <div className="logo">
         <NavLink to="/home">
-        <img src="src/public/images/logo/logo.png" />
+        <img src="/images/logo/logo.png" />
         </NavLink>
       </div>
       </div>

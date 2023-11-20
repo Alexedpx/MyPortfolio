@@ -4,7 +4,7 @@ export default function SharingCard() {
       <div className="Sharing">
         <div className="innerCard">
           <div className="frontSide">
-            <img src="src/public/images/card/Sharing.png" />
+            <img src="/images/card/Sharing.png" />
           </div>
           <div className="backSide">
             <p className="title">Co-working space</p>
