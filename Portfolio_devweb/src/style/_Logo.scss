@@ -1,20 +1,32 @@
-.container-logo {
- 
-  padding: 3%;
-  .logo {
-    img {
-      width: 70px;
-      height: 70px;
-      animation: scaleIn 0.5s ease-out;
-    }
-  }
+@keyframes scaleIn {
+	from {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
 }
 
+.container-logo {
+	padding: 3%;
+	.logo {
+		img {
+			width: 70px;
+			height: 70px;
+			animation: scaleIn 0.5s ease-out;
+			transition: transform 0.5s ease;
+		}
+
+		img:hover {
+			transform: scale(1.2);
+		}
+	}
+}
 
 @media screen and (max-width: 600px) {
-  
-  .container-logo {
-
-    position: relative;
-  }
+	.container-logo {
+		position: relative;
+	}
 }

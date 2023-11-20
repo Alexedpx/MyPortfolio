@@ -25,6 +25,7 @@ export default function MainPage() {
 			<div className="bg bg3"></div>
 			<div className="content"></div>
 			<div className="container-presentation">
+				
 				<Logo />
 				<div className="Profil" onClick={handleAboutMeClick}>
 					<button className="cta">
@@ -38,7 +39,11 @@ export default function MainPage() {
 				</div>
 
 				<div className="Social_link">
-					<a href="https://github.com/Alexedpx" target="_blank" rel="noreferrer">
+					<a
+						href="https://github.com/Alexedpx"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<img src="src/public/images/social/Github.png" />
 					</a>
 					<NavLink to="/contact">
@@ -48,7 +53,11 @@ export default function MainPage() {
 						/>
 					</NavLink>
 
-					<a href="https://www.linkedin.com/in/alexandra-depourtoux-422b38203/" target="_blank" rel="noreferrer">
+					<a
+						href="https://www.linkedin.com/in/alexandra-depourtoux-422b38203/"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<img src="src/public/images/social/Linkedin.png" />
 					</a>
 				</div>
