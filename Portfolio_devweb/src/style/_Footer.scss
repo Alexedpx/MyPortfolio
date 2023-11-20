@@ -12,9 +12,10 @@
 
 @media screen and (max-width: 600px) {
   .container-footer {
+   
 	display: flex;
 	justify-content: center;
-    margin-top: 15px;
+    margin-top: 0px;
     p {
       font-size: calc(var(--font-size-standard) * 0.6);
     }

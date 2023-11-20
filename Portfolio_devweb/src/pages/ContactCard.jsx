@@ -19,7 +19,7 @@ export default function ContactCard() {
           <div className="email">
             <h2>MAIL</h2>
 
-            <button>
+            <button a href="mailto:alexandradepourtoux93@gmail.com">
               <div class="svg-wrapper-1">
                 <div class="svg-wrapper">
                   <svg
@@ -38,7 +38,7 @@ export default function ContactCard() {
               </div>
               <p>
                 <a href="mailto:alexandradepourtoux93@gmail.com">
-                  alexandradepourtoux93@gmail.com
+                 <p> alexandradepourtoux93@gmail.com</p>
                 </a>
               </p>
             </button>

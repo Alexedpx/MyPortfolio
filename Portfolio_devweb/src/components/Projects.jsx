@@ -10,14 +10,12 @@ export default function Projects() {
 
   return (
     <>
-   
       <div className="container-projects">
-        
-          <div className="header" onClick={handleShowProjectClick}>
+        <div className="header" onClick={handleShowProjectClick}>
           <NavLink to="/projects">
-            <h1>See my projects ↗ </h1>
-            </NavLink>
-          </div>
+            <h1>See my projects</h1>
+          </NavLink>
+        </div>
       </div>
       {showProject && <ProjectsList />}
     </>
