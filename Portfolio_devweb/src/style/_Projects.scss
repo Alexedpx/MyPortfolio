@@ -43,10 +43,11 @@
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
 	.container-projects {
+		justify-content: center;
 		.header {
-      margin-top: 60%;
+			margin-top: 60%;
 			h1 {
 				font-size: calc(var(--font-size-standard) * 1.5);
 			}

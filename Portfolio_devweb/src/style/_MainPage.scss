@@ -152,11 +152,24 @@ body {
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
 	.container-presentation {
+		position: relative;
+		flex-direction: column;
 		.Profil {
+			margin-left: 10%;
+
 			p {
 				font-size: calc(var(--font-size-standard) * 0.8);
+			}
+		}
+
+		.Social_link {
+			padding-right: 8%;
+
+			img {
+				width: 100px;
+				height: 100px;
 			}
 		}
 	}

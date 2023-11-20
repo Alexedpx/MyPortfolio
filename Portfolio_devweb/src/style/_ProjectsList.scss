@@ -52,15 +52,17 @@
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
 	.container-card {
 		flex-direction: column-reverse;
-		border: 1px solid green;
-height: 100vh;
+		padding: 0;
+	
+		height: 80vh;
+		position: relative;
+		
 		.project-list {
-			flex-direction: column;
-      width: 100vw;
-      border: 1px solid blue;
+			
+			padding: 10%;
 			p {
 				font-size: calc(var(--font-size-standard) * 1.3);
 			}

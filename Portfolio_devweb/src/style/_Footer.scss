@@ -1,7 +1,21 @@
 .container-footer {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 7%;
-    padding-right: 2%;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 7%;
+	padding-right: 2%;
+
+	p {
+		font-size: calc(var(--font-size-standard) * 0.8);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container-footer {
+  
+ 
+		p {
+			font-size: calc(var(--font-size-standard) * 0.6);
+		}
+	}
 }
