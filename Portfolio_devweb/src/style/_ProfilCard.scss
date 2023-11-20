@@ -115,3 +115,15 @@
     filter: blur(0rem);
   }
 }
+
+
+@media screen and (max-width: 600px) {
+  .container-profilcard {
+  margin-right: 2%;
+    .card {
+    
+      height: 310px;
+      
+    }
+}
+}

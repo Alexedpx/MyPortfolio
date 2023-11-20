@@ -1,108 +1,142 @@
 @keyframes scaleIn {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+	from {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
 }
 .container-contactcard {
-  animation: scaleIn 0.9s ease-out;
-  display: flex;
-  padding-left: 20%;
-  padding-top: 10%;
- width: 100vw;
- height: 60vh;
+	animation: scaleIn 0.9s ease-out;
+	display: flex;
+	padding-left: 20%;
+	padding-top: 10%;
+	width: 100vw;
+	height: 60vh;
 
-  .card-email {
+	.card-email {
+		width: 150vw;
+		flex-direction: column;
+
+		h1 {
+			font-size: calc(var(--font-size-standard) * 3);
+			padding-bottom: 10px;
+		}
+		.underline {
+			width: 74%;
+		}
+		.email {
+			padding-top: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			h2 {
+				font-size: calc(var(--font-size-standard) * 1);
+				font-weight: bold;
+			}
+			p {
+				font-size: calc(var(--font-size-standard) * 1);
+			}
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+	button {
+		font-family: inherit;
+		font-size: 15px;
+		background: linear-gradient(to bottom, #f8896d 0%, #d86354 100%);
+		color: white;
+		padding: 0.5em 1.2em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+		border-radius: 25px;
+		box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+		transition: all 0.3s;
+	}
+
+	button:hover {
+		transform: translateY(-3px);
+		box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+	}
+
+	button:active {
+		transform: scale(0.95);
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	}
+
+	button span {
+		display: block;
+		transition: all 0.3s;
+	}
+
+	button svg {
+		width: 20px;
+		height: 18px;
+		fill: white;
+		transition: all 0.3s;
+	}
+
+	button .svg-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: rgba(255, 255, 255, 0.2);
+		margin-right: 0.5em;
+		transition: all 0.3s;
+	}
+
+	button:hover .svg-wrapper {
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+
+	button:hover svg {
+		transform: rotate(45deg);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container-contactcard {
+		display: flex;
+		justify-content: center;
     
-    width: 150vw;
-    flex-direction: column;
+    padding-top: 0%;
+		width: 100%;
+		height: 80vh;
 
-    h1 {
-      font-size: calc(var(--font-size-standard) * 3);
-      padding-bottom: 10px;
-    }
-    .underline {
-      width: 74%;
-    }
-    .email {
-      
-      padding-top: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-     
-      h2 {
-        font-size: calc(var(--font-size-standard) * 1);
-        font-weight: bold;
-       
-      }
-      p {
-        font-size: calc(var(--font-size-standard) * 1);
-      }
-      a {
-        text-decoration: none;
-      }
-    }
-  }
-  button {
-   
-    font-family: inherit;
-    font-size: 15px;
-    background: linear-gradient(to bottom, #f8896d 0%,#d86354 100%);
-    color: white;
-    padding: 0.5em 1.2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 25px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s;
-  }
-  
-  button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  button:active {
-    transform: scale(0.95);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  button span {
-    display: block;
-    transition: all 0.3s;
-  }
-  
-  button svg {
-    width: 20px;
-    height: 18px;
-    fill: white;
-    transition: all 0.3s;
-  }
-  
-  button .svg-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin-right: 0.5em;
-    transition: all 0.3s;
-  }
-  
-  button:hover .svg-wrapper {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  
-  button:hover svg {
-    transform: rotate(45deg);
-  }
+		.card-email {
+			display: flex;
+			justify-content: center;
+			width: 100vw;
+
+			h1 {
+				font-size: calc(var(--font-size-standard) * 2);
+			}
+			.underline {
+				width: 80%;
+			}
+			.email {
+				h2 {
+					font-size: calc(var(--font-size-standard) * 1);
+				}
+				p {
+					font-size: calc(var(--font-size-standard) * 0.8);
+				}
+				a {
+					display: none;
+				}
+			}
+		}
+		button {
+			margin-left: 25%;
+		}
+	}
 }
