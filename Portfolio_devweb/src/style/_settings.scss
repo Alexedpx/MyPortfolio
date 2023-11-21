@@ -1,67 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;1,200;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
 
 :root {
-  /* Colors */
-  --primary-color: #ffffff;
-  --secondary-color: #000000;
+	/* Colors */
+	--primary-color: #ffffff;
+	--secondary-color: #000000;
 
-  /* font-family */
-  --font: "Montserrat", sans-serif;
+	/* font-family */
+	--font: "Montserrat", sans-serif;
+  --font-style-title: "Comfortaa", sans-serif;
 
-  /* font-weight */
+	/* font-weight */
 
-  --font-weight-text: 400;
-  --font-weight-text-bold: 500;
+	--font-weight-text: 400;
+	--font-weight-text-bold: 500;
 
-  /* font-size */
-  --font-size-standard: 1.25rem; /* 20px */
-  --font-size-title: calc(var(--font-size-standard) * 2);
+	/* font-size */
+	--font-size-standard: 1.25rem; /* 20px */
+	--font-size-title: calc(var(--font-size-standard) * 2);
 
-  /* spacing */
-  --spacing: 0.5rem; /* 8px */
-  --spacing-x2: calc(var(--spacing) * 2);
+	/* spacing */
+	--spacing: 0.5rem; /* 8px */
+	--spacing-x2: calc(var(--spacing) * 2);
 
-  /* border-radius */
-  --search-border-radius: 1.25rem; /* 20px */
+	/* border-radius */
+	--search-border-radius: 1.25rem; /* 20px */
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: var(--primary-color);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: var(--primary-color);
 }
 
 body {
-  font-family: var(--font);
-  width: 100vw;
-  height: 100vh;
-  overflow-y: hidden;
-  overflow-x: hidden;
+	font-family: var(--font);
+	width: 100vw;
+	height: 100vh;
+	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
-
 .bg {
-  animation: slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(
-    -60deg,
-    rgb(17, 16, 16) 50%,
-    rgb(39, 39, 39) 50%
-  );
-  bottom: 0;
-  left: -50%;
-  opacity: 0.5;
-  position: fixed;
-  right: -50%;
-  top: 0;
-  z-index: -1;
+	animation: slide 3s ease-in-out infinite alternate;
+	background-image: linear-gradient(
+		-60deg,
+		rgb(17, 16, 16) 50%,
+		rgb(39, 39, 39) 50%
+	);
+	bottom: 0;
+	left: -50%;
+	opacity: 0.5;
+	position: fixed;
+	right: -50%;
+	top: 0;
+	z-index: -1;
 }
 
 .bg2 {
-  animation-direction: alternate-reverse;
-  animation-duration: 4s;
+	animation-direction: alternate-reverse;
+	animation-duration: 4s;
 }
 
 .bg3 {
-  animation-duration: 5s;
+	animation-duration: 5s;
 }

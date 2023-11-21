@@ -43,13 +43,15 @@
 
 .Welcome {
   text-align: center;
-
+ 
   a {
     text-decoration: none;
+    font-family: var( --font-style-title);
     cursor: pointer;
   }
 
   h1 {
+    
     font-size: calc(var(--font-size-standard) * 3);
   }
 
