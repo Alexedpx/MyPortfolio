@@ -8,7 +8,7 @@ export default function WookieCard() {
           </div>
           <div className="BackSide">
             <p className="title">Ride through the Galaxy</p>
-            <h1>Wookie Taxi</h1>
+            <h1> Wookie Taxi </h1>
             <div className="description">
               <h2>
                 Want to book a ride through the Galaxy? <br></br>

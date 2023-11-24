@@ -1,130 +1,128 @@
 .container-profilcard {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 
-  .card {
-    position: absolute;
-    justify-content: center;
-    align-content: center;
-    margin-right: 3%;
-    width: 230px;
-    height: 320px;
-    border-radius: 10px;
-    border: 4px solid #6b9080;
-    background: #a4c3b2;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
+	.card {
+		position: absolute;
+		justify-content: center;
+		align-content: center;
 
-  .card::before {
-    content: "";
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    top: -40%;
-    left: -20%;
-    border-radius: 50%;
-    border: 35px solid rgba(255, 255, 255, 0.637);
-    transition: all 0.8s ease;
-    filter: blur(0.5rem);
-  }
+		width: 230px;
+		height: 320px;
+		border-radius: 10px;
+		border: 4px solid #6b9080;
+		background: #a4c3b2;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
 
-  .text {
-    flex-grow: 1;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+	.card::before {
+		content: "";
+		height: 100px;
+		width: 100px;
+		position: absolute;
+		top: -40%;
+		left: -20%;
+		border-radius: 50%;
+		border: 35px solid rgba(255, 255, 255, 0.637);
+		transition: all 0.8s ease;
+		filter: blur(0.5rem);
+	}
 
-    flex-direction: column;
-    color: aliceblue;
-    padding: 5%;
-    p {
-      text-align: justify;
-      font-size: calc(var(--font-size-standard) * 0.7);
-    }
-    @keyframes wiggle {
-      0%, 7% {
-        transform: rotateZ(0);
-      }
-      15% {
-        transform: rotateZ(-15deg);
-      }
-      20% {
-        transform: rotateZ(10deg);
-      }
-      25% {
-        transform: rotateZ(-10deg);
-      }
-      30% {
-        transform: rotateZ(6deg);
-      }
-      35% {
-        transform: rotateZ(-4deg);
-      }
-      40%, 100% {
-        transform: rotateZ(0);
-      }
-    }
-    h2 {
-      animation: wiggle 2s linear infinite;
-      text-align: center;
-      font-size: calc(var(--font-size-standard) * 0.8);
-    }
-  }
+	.text {
+		flex-grow: 1;
+		padding: 20px;
+		display: flex;
+		justify-content: center;
 
-  .icons {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 0px 0px 15px 15px;
-    overflow: hidden;
+		flex-direction: column;
+		color: aliceblue;
+		padding: 5%;
+		p {
+			text-align: justify;
+			font-size: calc(var(--font-size-standard) * 0.7);
+		}
+		@keyframes wiggle {
+			0%,
+			7% {
+				transform: rotateZ(0);
+			}
+			15% {
+				transform: rotateZ(-15deg);
+			}
+			20% {
+				transform: rotateZ(10deg);
+			}
+			25% {
+				transform: rotateZ(-10deg);
+			}
+			30% {
+				transform: rotateZ(6deg);
+			}
+			35% {
+				transform: rotateZ(-4deg);
+			}
+			40%,
+			100% {
+				transform: rotateZ(0);
+			}
+		}
+		h2 {
+			animation: wiggle 2s linear infinite;
+			text-align: center;
+			font-size: calc(var(--font-size-standard) * 0.8);
+		}
+	}
 
-    p {
-      font-size: calc(var(--font-size-standard) * 0.6);
-    }
-  }
-  @keyframes scaleIn {
-    from {
-      transform: scale(0.8);
-      opacity: 0;
-    }
-    to {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
+	.icons {
+		display: flex;
+		justify-items: center;
+		align-items: center;
+		flex-direction: column;
+		border-radius: 0px 0px 15px 15px;
+		overflow: hidden;
 
-  .svg-icon {
-    transition: transform 0.5s ease;
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-    stroke: rgb(255, 255, 255);
-  }
-  .svg-icon:hover {
-   stroke: #6b9080;
-    transform: scale(1.2);
-  }
+		p {
+			font-size: calc(var(--font-size-standard) * 0.6);
+		}
+	}
+	@keyframes scaleIn {
+		from {
+			transform: scale(0.8);
+			opacity: 0;
+		}
+		to {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
 
-  .card:hover::before {
-    width: 140px;
-    height: 140px;
-    top: -30%;
-    left: 50%;
-    filter: blur(0rem);
-  }
+	.svg-icon {
+		transition: transform 0.5s ease;
+		cursor: pointer;
+		width: 25px;
+		height: 25px;
+		stroke: rgb(255, 255, 255);
+	}
+	.svg-icon:hover {
+		stroke: #6b9080;
+		transform: scale(1.2);
+	}
+
+	.card:hover::before {
+		width: 140px;
+		height: 140px;
+		top: -30%;
+		left: 50%;
+		filter: blur(0rem);
+	}
 }
-
 
 @media screen and (max-width: 600px) {
-  .container-profilcard {
-  
-    .card {
-    
-      height: 310px;
-      
-    }
-}
+	.container-profilcard {
+		.card {
+			height: 310px;
+		}
+	}
 }
