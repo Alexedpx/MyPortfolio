@@ -1,6 +1,6 @@
 import SharingCard from "../components/SharingCard";
 import WookieCard from "../components/WookieCard";
-import Project3Card from "../components/Project3Card";
+import HackathonCard from "../components/HackathonCard";
 import Logo from "../components/Logo";
 import Footer from "../components/Footer";
 import { useState } from "react";
@@ -24,7 +24,7 @@ export default function ProjectsList() {
       <div className="container-card">
         {openCard === "SharingCard" && <SharingCard />}
         {openCard === "WookieCard" && <WookieCard />}
-        {openCard === "Project3Card" && <Project3Card />}
+        {openCard === "HackathonCard" && <HackathonCard />}
         <div className="project-list">
         <div
           className="sharing-project"
@@ -41,10 +41,10 @@ export default function ProjectsList() {
           <br></br>
           </div>
           <div
-          className="project3-project"
-          onClick={() => handleClickShowCard("Project3Card")}
+          className="hackathon-project"
+          onClick={() => handleClickShowCard("HackathonCard")}
         >
-          <p>Project 3</p>
+          <p>Noël en un clic</p>
           </div>
          
       </div>
